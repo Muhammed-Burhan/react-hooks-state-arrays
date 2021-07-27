@@ -10,7 +10,10 @@ const newSpicyFoods = [
 ];
 
 function getNewSpicyFood() {
-  return newSpicyFoods.shift();
+  console.log();
+  return newSpicyFoods.length > 0
+    ? newSpicyFoods.shift()
+    : alert("No more food to add sorry ");
 }
 
 export { spicyFoods, getNewSpicyFood };
